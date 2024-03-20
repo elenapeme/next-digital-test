@@ -3,8 +3,14 @@ function ListOfUsers({ users }) {
         <ul className='users'>
       {
         users.map(user => (
-          <li className='user' key={user.id}>
+          <li className='user-card' key={user.id}>
             <h3>{user.name}</h3>
+            <div>
+              <p>{user.username}</p>
+              <p>{user.email}</p>
+              <p>{user.address.city}</p>
+              <p>{ user.website}</p>
+            </div>
           </li>
         ))
       }

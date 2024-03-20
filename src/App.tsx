@@ -8,7 +8,7 @@ function App() {
   const users = useUsers()
 
   return (
-    <div>
+    <div className='page'>
       <header>
         <h1>Red Social de la Empresa</h1>
       </header>
