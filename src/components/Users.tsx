@@ -8,8 +8,8 @@ function ListOfUsers({ users }) {
             <div>
               <p>{user.username}</p>
               <p>{user.email}</p>
-              <p>{user.address.city}</p>
-              <p>{ user.website}</p>
+              <p>{user.city}</p>
+              <p>{user.website}</p>
             </div>
           </li>
         ))

@@ -4,8 +4,11 @@ import { useUsers } from './hooks/useUsers.ts'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const users = useUsers()
+  const { users, loading, error } = useUsers();
+
+    if (loading) return <p>Loading users...</p>;
+    if (error) return <p>Error loading users: {error.message}</p>;
+
 
   return (
     <div className='page'>
